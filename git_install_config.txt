@@ -7,4 +7,6 @@
 3. add file and commit
 	git add "fileName"
 	git commit -m "message for log"
-
+4. modify and commit
+	git add "modified file"
+	git commit -m "message for log"
