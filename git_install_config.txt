@@ -4,4 +4,7 @@
 2. create folder and initail
 	mkdir abc
 	git init
+3. add file and commit
+	git add "fileName"
+	git commit -m "message for log"
 
