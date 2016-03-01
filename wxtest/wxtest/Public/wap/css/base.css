@@ -1,0 +1,120 @@
+﻿/*reset*/
+body, p, input, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form ,i{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: middle; outline: none; -webkit-tap-highlight-color:transparent;
+}
+body { font-family: "microsoft yahei"; color: #666; font-size: 14px; box-sizing: border-box;
+    /*-webkit-user-select: none;*/
+    /*-webkit-text-size-adjust: none;*/
+}
+header, section, footer {display: block; margin: 0; padding: 0;}
+img{ padding: 0; margin: 0; border: 0;}
+a { text-decoration: none; outline: 0;  cursor: pointer; color: #808080;}
+button { outline: 0;   border: none;}
+button::-moz-focus-inner {  border: 0;}
+h1, h2, h3, h4, h5, h6 {  font-size: 100%;}
+ul, ol, li {   list-style: none;}
+p, span, a {  -webkit-user-select: auto;}
+table {   border-collapse: collapse;  border-spacing: 0;}
+input,textarea,select {font-family: "microsoft yahei";  outline: none;  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: none;}
+input[type="button"],input[type="text"],input[type="submit"],input[type="tel"],textarea
+{ -webkit-appearance : none ; appearance: normal;  -moz-appearance:none;}
+*:focus { outline: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  -webkit-text-stroke: none;}
+a:link, a:visited { outline: none; }
+a:visited { color: #808080;}
+a:hover { outline: none;  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  -webkit-text-stroke: none;}
+a:focus { outline: none;  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  -webkit-text-stroke: none;}
+.l { float: left;}
+.r { float: right;}
+.auto { margin-left: auto;   margin-right: auto;}
+.clear { *zoom: 1;}
+.clear:after { content: '\0020';  display: block; height: 0; clear: both;}
+.pt48{ padding-top: 48px;}
+.pt49{ padding-top: 49px;}
+.pr{ position: relative;}
+
+/*公用部分样式*/
+.icon{ display: block; background-image: url(../images/icon_sprite.png); background-repeat:  no-repeat;
+    background-size:93px auto;  }
+/*子页面公用头部*/
+.header{ width: 100%; height: 44px; padding: 2px 0; position: fixed; top:0; left: 0; background: #f6f5f1;
+    text-align: center; border-bottom: 1px solid #939393; z-index: 99;}
+.header .title{ color: #333; font-size: 16px; font-weight: 200; line-height: 24px;height: 24px;}
+/*.header .sub-title,.header .title-b{  font-weight: bold;font-size: 16px;}*/
+.header h1{ display: inline-block;font-weight: bold;}
+.header .sub-title{display: block; line-height: 44px;height: 44px;font-size: 16px; text-align: center;}
+.header .title-up{line-height: 24px;height: 24px;font-size: 15px; }
+.color-blue{color: #59a9dc;}
+.color-black{color: #333;}
+.header .info{ color: #9b9b9b; font-size: 13px; line-height: 20px;}
+.header-r{ display: inline-block; position: absolute; line-height: 44px; right: 10px; top:0;}
+.header-back{ display: block; width: 44px; height: 44px; background: url(../images/arrow_l_h.png) center center no-repeat;
+    position: absolute; left: 0; top:2px; overflow: hidden; text-indent: -1000px; background-size: 25% auto;}
+/*footer*/
+.footer{ height: 50px; background: #019ae6; border-top: 1px solid #7ac8ef; width: 100%; position: fixed;
+bottom: 0; left: 0; z-index: 99;}
+.nav-list{ display: block; width: 25%;  height: 50px; float: left;}
+.c:after{ display: block; content: ""; clear: both;}
+.icon-foot{ display: block; width: 22px; height:20px; background: url(../images/icon_foot.png) no-repeat;
+margin: 15px auto auto auto; background-size:100% auto;}
+.footer .book .icon-foot{ background-position: 0 0;}
+.footer .order .icon-foot{ background-position: 0 -20px;}
+.footer .user .icon-foot{ background-position: 0 -40px;}
+.footer .code .icon-foot{ background-position: 0 -60px;}
+.foot-nav-info{ display: none; line-height: 20px; text-align: center;}
+.nav-list.active{ background-color:#0285c6;}
+
+/*公共页面底部定位*/
+.posit-foot{ width: 100%; height: 38px;line-height: 38px; padding: 6px 0; position: fixed; left: 0; bottom: 0;
+    background: #fff; border-top: 1px solid #d7d7d7; z-index: 99;}
+.amount-warp{ padding:3px 5px 3px 10px; height: 30px; line-height: 30px;}
+.shop-cart{ display: block; width: 28px; height: 28px; background: url(../images/icon_shopcar.png) center center no-repeat;
+    background-size: 75% auto; border:1px solid #d7d7d7; border-radius: 50%; text-align: center;
+    line-height: 28px; color: #fb8053;}
+.shop-cart.no-img{ background-image: none;}
+.service-book{ display: inline-block; line-height: 36px; height: 38px; padding:0 15px; text-align: center; background: #fb8053;
+    border-radius: 4px; color: #fff; border: 1px solid #fb8053; margin-right:3px; font-weight: bold; font-size: 15px;
+    -webkit-appearance : none ; box-sizing: border-box;}
+
+.service-book:disabled{ background-color: #d7d7d7; border-color:#d7d7d7;}
+.btn-grey{ background-color: #fff; border-color: #333; color: #333;}
+.btn-white:visited,.service-book:visited{ color: #fff;}
+.btn-grey:visited{ color: #333;}
+
+.text-org{ color: #fb8053;}
+.white-light{width: 20px; height: 22px; background-position:-51px -100px; float: left; margin: 6px 3px auto auto; }
+.posit-foot-r{ display: inline-block; height: 36px;  position: absolute;right: 0;top: 6px;background: #fff; padding-left: 10px;}
+.btn-posit-b{ position: absolute; right: 0; top:6px;}
+.posit-c-box{ float:right;height: 36px; line-height: 36px; position: absolute; right: 100px; top:6px;}
+
+.dis-table{ display: table;}
+.cell{ display: table-cell; vertical-align: middle;}
+.dis-table .cell1{ padding: 6px 0 6px 4px; line-height: 20px;}
+.dis-table .cell2{ text-align: right; padding: 6px 0; line-height: 20px;/* max-width: 120px;*/}
+.dis-table .cell3{width: 90px;}
+#submitbtn{ padding: 0 10px; margin-right: 5px;}
+#discountMoney{ max-width: 62px; word-break:break-all;}
+.posit-foot .amount{font-size: 18px; padding-right: 5px; word-break:break-all;
+/*overflow: hidden; text-overflow: ellipsis; white-space: nowrap;*/ }
+.posit-foot .amount b{ font-weight: 200;}
+
+#videoBlank{ color: #fff;line-height: 20px; padding:0 5%;  position: absolute; left: 0;top: 30px; width: 90%;
+text-align: center;}
+
+/*通用*/
+.pt10{ padding-top: 10px;}
+.ptb10{ padding-top: 10px; padding-bottom: 10px;}
+.pb51{ padding-bottom: 51px;}
+.line_d7{ background-color: #d7d7d7; height: 1px; line-height: 1px; margin: 0 15px;}
+.inline-block{ display: inline-block;}
+.hide{ display: none;}
+.show{ display: block;}
+.center{ text-align: center;}
+.plr5{ padding-left: 5px; padding-right: 5px;}
+.black-shadow{width: 100%;  background: rgba(0,0,0,.5); position: fixed; left: 0; top:0; bottom: 0; z-index: 999;
+    overflow: hidden;}
+.color_80{ color: #808080;}
+

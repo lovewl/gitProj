@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wxtest", "wxtest\wxtest.csproj", "{DBB3B0E5-26A6-48B8-A1CB-C39F87FCD551}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WxDev.Utility", "WxDev.Utility\WxDev.Utility.csproj", "{BF4D7ADF-744A-4529-AF54-E77A38680436}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WxDev.DAL", "WxDev.DAL\WxDev.DAL.csproj", "{1690C3BE-D21F-4B31-971B-6E2630270D1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WxDev.Model", "WxDev.Model\WxDev.Model.csproj", "{067280FC-104B-4062-B441-8F506CC13B0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WxDev.BLL", "WxDev.BLL\WxDev.BLL.csproj", "{D190B207-79AD-4439-8BC7-0310F65A5431}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoverTree.BLL", "HoverTree.BLL\HoverTree.BLL.csproj", "{C41B7718-29A2-4A25-A2A9-429A9D1F7210}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoverTree.DALFactory", "HoverTree.DALFactory\HoverTree.DALFactory.csproj", "{CAAE278F-E3E0-49CA-A9F3-460398607EF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoverTree.DBTools", "HoverTree.DBTools\HoverTree.DBTools.csproj", "{48B13CA9-6FE9-4342-B3C7-EAAFC302E098}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoverTree.Framework", "HoverTree.Framework\HoverTree.Framework.csproj", "{14F134DB-7C85-463E-8CC2-ED13EE0EAA59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoverTree.IDAL", "HoverTree.IDAL\HoverTree.IDAL.csproj", "{9DF62D3E-9127-46BB-AC5D-93A0BA45CC66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoverTree.Model", "HoverTree.Model\HoverTree.Model.csproj", "{E189ADEC-1343-4393-8010-CA3D112D9AA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoverTree.SQLServerDAL", "HoverTree.SQLServerDAL\HoverTree.SQLServerDAL.csproj", "{A0144A82-CA63-4330-BBCB-03FD419184C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBB3B0E5-26A6-48B8-A1CB-C39F87FCD551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB3B0E5-26A6-48B8-A1CB-C39F87FCD551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB3B0E5-26A6-48B8-A1CB-C39F87FCD551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB3B0E5-26A6-48B8-A1CB-C39F87FCD551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF4D7ADF-744A-4529-AF54-E77A38680436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF4D7ADF-744A-4529-AF54-E77A38680436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF4D7ADF-744A-4529-AF54-E77A38680436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF4D7ADF-744A-4529-AF54-E77A38680436}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1690C3BE-D21F-4B31-971B-6E2630270D1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1690C3BE-D21F-4B31-971B-6E2630270D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1690C3BE-D21F-4B31-971B-6E2630270D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1690C3BE-D21F-4B31-971B-6E2630270D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{067280FC-104B-4062-B441-8F506CC13B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{067280FC-104B-4062-B441-8F506CC13B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{067280FC-104B-4062-B441-8F506CC13B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{067280FC-104B-4062-B441-8F506CC13B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D190B207-79AD-4439-8BC7-0310F65A5431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D190B207-79AD-4439-8BC7-0310F65A5431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D190B207-79AD-4439-8BC7-0310F65A5431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D190B207-79AD-4439-8BC7-0310F65A5431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C41B7718-29A2-4A25-A2A9-429A9D1F7210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C41B7718-29A2-4A25-A2A9-429A9D1F7210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C41B7718-29A2-4A25-A2A9-429A9D1F7210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C41B7718-29A2-4A25-A2A9-429A9D1F7210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAAE278F-E3E0-49CA-A9F3-460398607EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAAE278F-E3E0-49CA-A9F3-460398607EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAAE278F-E3E0-49CA-A9F3-460398607EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAAE278F-E3E0-49CA-A9F3-460398607EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48B13CA9-6FE9-4342-B3C7-EAAFC302E098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48B13CA9-6FE9-4342-B3C7-EAAFC302E098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48B13CA9-6FE9-4342-B3C7-EAAFC302E098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48B13CA9-6FE9-4342-B3C7-EAAFC302E098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14F134DB-7C85-463E-8CC2-ED13EE0EAA59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14F134DB-7C85-463E-8CC2-ED13EE0EAA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14F134DB-7C85-463E-8CC2-ED13EE0EAA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14F134DB-7C85-463E-8CC2-ED13EE0EAA59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DF62D3E-9127-46BB-AC5D-93A0BA45CC66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF62D3E-9127-46BB-AC5D-93A0BA45CC66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF62D3E-9127-46BB-AC5D-93A0BA45CC66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF62D3E-9127-46BB-AC5D-93A0BA45CC66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E189ADEC-1343-4393-8010-CA3D112D9AA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E189ADEC-1343-4393-8010-CA3D112D9AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E189ADEC-1343-4393-8010-CA3D112D9AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E189ADEC-1343-4393-8010-CA3D112D9AA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0144A82-CA63-4330-BBCB-03FD419184C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0144A82-CA63-4330-BBCB-03FD419184C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0144A82-CA63-4330-BBCB-03FD419184C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0144A82-CA63-4330-BBCB-03FD419184C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

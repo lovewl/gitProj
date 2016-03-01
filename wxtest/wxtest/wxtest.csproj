@@ -1,0 +1,1315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBB3B0E5-26A6-48B8-A1CB-C39F87FCD551}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>wxtest</RootNamespace>
+    <AssemblyName>wxtest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="account\login.aspx" />
+    <Content Include="account\register.aspx" />
+    <Content Include="AddMessage.htm" />
+    <Content Include="assets\css\bootstrap-theme.css" />
+    <Content Include="assets\css\bootstrap-theme.min.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\hvt.css" />
+    <Content Include="assets\css\hvtimg.css" />
+    <Content Include="assets\css\jquery.hovertree.0.1.3.min.css" />
+    <Content Include="assets\css\mana-sidebar-index.css" />
+    <Content Include="assets\css\mian.css" />
+    <Content Include="assets\css\reset.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\supersized.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\images\123.jpg" />
+    <Content Include="assets\images\3A21B2BDCA11C027BA12CB760F1A4288.jpg" />
+    <Content Include="assets\images\41.jpg" />
+    <Content Include="assets\images\75FCEC2188CCBBB9152F3A568D507AE9.jpg" />
+    <Content Include="assets\images\activity\answer\answer01.jpg" />
+    <Content Include="assets\images\activity\answer\answer02.jpg" />
+    <Content Include="assets\images\back.png" />
+    <Content Include="assets\images\backgrounds\1.jpg" />
+    <Content Include="assets\images\backgrounds\2.jpg" />
+    <Content Include="assets\images\backgrounds\3.jpg" />
+    <Content Include="assets\images\carouselIndex\carousel01.jpg" />
+    <Content Include="assets\images\carouselIndex\carousel02.jpg" />
+    <Content Include="assets\images\carouselIndex\carousel03.jpg" />
+    <Content Include="assets\images\carouselIndex\carousel04.jpg" />
+    <Content Include="assets\images\carouselIndex\carousel05.jpg" />
+    <Content Include="assets\images\dianhua.png" />
+    <Content Include="assets\images\facebook.png" />
+    <Content Include="assets\images\fanhui.png" />
+    <Content Include="assets\images\HeadPortraitDefault.jpg" />
+    <Content Include="assets\images\home.png" />
+    <Content Include="assets\images\hovertree.png" />
+    <Content Include="assets\images\icons\indexIcon01.jpg" />
+    <Content Include="assets\images\icons\indexIcon02.jpg" />
+    <Content Include="assets\images\icons\indexIcon03.jpg" />
+    <Content Include="assets\images\icons\indexIcon04.jpg" />
+    <Content Include="assets\images\icons\indexIcon05.jpg" />
+    <Content Include="assets\images\leaveMSG.png" />
+    <Content Include="assets\images\list.png" />
+    <Content Include="assets\images\lm.png" />
+    <Content Include="assets\images\logo_1.jpg" />
+    <Content Include="assets\images\map.png" />
+    <Content Include="assets\images\progress.gif" />
+    <Content Include="assets\images\qrcode-50-1.jpg" />
+    <Content Include="assets\images\tel.png" />
+    <Content Include="assets\images\thumbnail\0B40A5C43355A2747AA96A410944F6E2.jpg" />
+    <Content Include="assets\images\thumbnail\86DAAAD619D73E80DAD0E84264A6499A.jpg" />
+    <Content Include="assets\images\twitter.png" />
+    <Content Include="assets\images\web\03.jpg" />
+    <Content Include="assets\images\web\1.jpg" />
+    <Content Include="assets\images\web\12.gif" />
+    <Content Include="assets\images\web\2.jpg" />
+    <Content Include="assets\images\web\21.gif" />
+    <Content Include="assets\images\web\3.jpg" />
+    <Content Include="assets\images\web\30.gif" />
+    <Content Include="assets\images\web\4.jpg" />
+    <Content Include="assets\images\web\6.gif" />
+    <Content Include="assets\images\web\air01.jpg" />
+    <Content Include="assets\images\web\air02.jpg" />
+    <Content Include="assets\images\web\air03.jpg" />
+    <Content Include="assets\images\web\air04.jpg" />
+    <Content Include="assets\images\web\air101.jpg" />
+    <Content Include="assets\images\web\air102.jpg" />
+    <Content Include="assets\images\web\air103.jpg" />
+    <Content Include="assets\images\web\air104.jpg" />
+    <Content Include="assets\images\web\airIntro01.jpg" />
+    <Content Include="assets\images\web\airIntro02.jpg" />
+    <Content Include="assets\images\web\airIntro03.jpg" />
+    <Content Include="assets\images\web\airIntro04.jpg" />
+    <Content Include="assets\images\web\airIntro05.jpg" />
+    <Content Include="assets\images\web\airIntro06.jpg" />
+    <Content Include="assets\images\web\airIntro07.jpg" />
+    <Content Include="assets\images\web\airIntro08.jpg" />
+    <Content Include="assets\images\web\cart01.jpg" />
+    <Content Include="assets\images\web\claimsProcess\thumb\1.jpg" />
+    <Content Include="assets\images\web\claimsProcess\thumb\2.jpg" />
+    <Content Include="assets\images\web\claimsProcess\thumb\3.jpg" />
+    <Content Include="assets\images\web\claimsProcess\thumb\4.jpg" />
+    <Content Include="assets\images\web\claimsProcess\thumb\5.jpg" />
+    <Content Include="assets\images\web\claimsProcess\thumb\6.jpg" />
+    <Content Include="assets\images\web\claimsProcess\thumb\7.jpg" />
+    <Content Include="assets\images\web\claimsProcess\thumb\8.jpg" />
+    <Content Include="assets\images\web\claimsProcess\thumb\9.jpg" />
+    <Content Include="assets\images\web\dark_embroidery.png" />
+    <Content Include="assets\images\web\emploee\JingYaRu01.jpg" />
+    <Content Include="assets\images\web\emploee\LiGang01.jpg" />
+    <Content Include="assets\images\web\emploee\LiuJun01.jpg" />
+    <Content Include="assets\images\web\emploee\SuPing01.jpg" />
+    <Content Include="assets\images\web\emploee\thumb\JingYaRu01.jpg" />
+    <Content Include="assets\images\web\emploee\thumb\LiGang01.jpg" />
+    <Content Include="assets\images\web\emploee\thumb\LiuJun01.jpg" />
+    <Content Include="assets\images\web\emploee\thumb\SuPing01.jpg" />
+    <Content Include="assets\images\web\emploee\thumb\ZhaoGuoLan01.jpg" />
+    <Content Include="assets\images\web\emploee\thumb\ZhaoLu01.jpg" />
+    <Content Include="assets\images\web\emploee\WangCaiPing01.jpg" />
+    <Content Include="assets\images\web\emploee\ZhaoGuoLan01.jpg" />
+    <Content Include="assets\images\web\emploee\ZhaoLu01.jpg" />
+    <Content Include="assets\images\web\fast01.jpg" />
+    <Content Include="assets\images\web\fast02.jpg" />
+    <Content Include="assets\images\web\fast03.jpg" />
+    <Content Include="assets\images\web\fast04.jpg" />
+    <Content Include="assets\images\web\fast05.jpg" />
+    <Content Include="assets\images\web\fast06.jpg" />
+    <Content Include="assets\images\web\fast101.jpg" />
+    <Content Include="assets\images\web\fast102.jpg" />
+    <Content Include="assets\images\web\fast103.jpg" />
+    <Content Include="assets\images\web\fast104.jpg" />
+    <Content Include="assets\images\web\fast105.jpg" />
+    <Content Include="assets\images\web\fast106.jpg" />
+    <Content Include="assets\images\web\index01.jpg" />
+    <Content Include="assets\images\web\index02.jpg" />
+    <Content Include="assets\images\web\index03.jpg" />
+    <Content Include="assets\images\web\index04.jpg" />
+    <Content Include="assets\images\web\index05.jpg" />
+    <Content Include="assets\images\web\leaveMSG.jpg" />
+    <Content Include="assets\images\web\Manage\qrcode-50.jpg" />
+    <Content Include="assets\images\web\Manage\qrcode-8.jpg" />
+    <Content Include="assets\images\web\Manage\yongjiu-144x80.jpg" />
+    <Content Include="assets\images\web\Manage\yongjiu-360x200.jpg" />
+    <Content Include="assets\images\web\metalplate\cart_part_01.png" />
+    <Content Include="assets\images\web\metalplate\cart_part_02.png" />
+    <Content Include="assets\images\web\metalplate\cart_part_03.png" />
+    <Content Include="assets\images\web\metalplate\cart_part_04.png" />
+    <Content Include="assets\images\web\metalplate\cart_part_05.png" />
+    <Content Include="assets\images\web\metalplate\icon01.png" />
+    <Content Include="assets\images\web\metalplate\icon02.png" />
+    <Content Include="assets\images\web\metalplate\icon03bak.png" />
+    <Content Include="assets\images\web\metalplate\icon04.png" />
+    <Content Include="assets\images\web\metalplate\icon05.png" />
+    <Content Include="assets\images\web\metalplate\icon06.png" />
+    <Content Include="assets\images\web\metalplate\introl01bak.png" />
+    <Content Include="assets\images\web\metalplate\introl02bak.png" />
+    <Content Include="assets\images\web\metalplate\lunbo01.jpg" />
+    <Content Include="assets\images\web\metalplate\lunbo02.jpg" />
+    <Content Include="assets\images\web\metalplate\lunbo03.jpg" />
+    <Content Include="assets\images\web\metalplate\icon03.png" />
+    <Content Include="assets\images\web\metalplate\introl01.png" />
+    <Content Include="assets\images\web\metalplate\introl02.png" />
+    <Content Include="assets\images\web\serverchenzhen.jpg" />
+    <Content Include="assets\images\web\serverguoyinhua.jpg" />
+    <Content Include="assets\images\web\serverjingyaru.jpg" />
+    <Content Include="assets\images\web\serverligang.jpg" />
+    <Content Include="assets\images\web\serverlijuan.jpg" />
+    <Content Include="assets\images\web\serverliujun.jpg" />
+    <Content Include="assets\images\web\serversuping.jpg" />
+    <Content Include="assets\images\web\serverzhaoguolan.jpg" />
+    <Content Include="assets\images\web\serverzhaolu.jpg" />
+    <Content Include="assets\images\web\serviceManager01.jpg" />
+    <Content Include="assets\images\web\shiyitu01.jpg" />
+    <Content Include="assets\images\web\shiyitu02.jpg" />
+    <Content Include="assets\images\web\shiyitu03.jpg" />
+    <Content Include="assets\images\web\shiyitu04.jpg" />
+    <Content Include="assets\images\web\shiyitu05.jpg" />
+    <Content Include="assets\images\web\shiyitu06.jpg" />
+    <Content Include="assets\images\web\shiyitu07.jpg" />
+    <Content Include="assets\images\web\shiyitu08.jpg" />
+    <Content Include="assets\images\web\Shop\items\6BBD4AEEFF0747462EFBE0851BE49455.jpg" />
+    <Content Include="assets\images\web\Shop\items\A172517D082411C34BBEB81C37560426.jpg" />
+    <Content Include="assets\images\web\Shop\items\BA02991C428BCD1160ADEAC270409A4E.jpg" />
+    <Content Include="assets\images\web\Shop\items\BoLiShui01.jpg" />
+    <Content Include="assets\images\web\Shop\items\thum\05D0D96813798706639AAC728B3979A3.jpg" />
+    <Content Include="assets\images\web\Shop\items\thum\062DE524B6FD8E234449E045F35C13F9.jpg" />
+    <Content Include="assets\images\web\Shop\items\thum\157127A49D1D0A4281154BE678409EB3.jpg" />
+    <Content Include="assets\images\web\Shop\items\thum\1FA40E9070368C7DF0C14F83AC45686C.jpg" />
+    <Content Include="assets\images\web\Shop\items\thum\568840F02652C0C639A02F6A5004FADB.jpg" />
+    <Content Include="assets\images\web\Shop\items\thum\93CD86AF78ED591DC795D7597F12A308.jpg" />
+    <Content Include="assets\images\web\Shop\items\thum\9ABFD0E83BAB7602BA0D5FD79D572D80.jpg" />
+    <Content Include="assets\images\web\Shop\items\thum\BoLiShui01.jpg" />
+    <Content Include="assets\images\web\Shop\items\thum\C133B9FFA459EDC6F2DFC803C8D1B123.jpg" />
+    <Content Include="assets\images\web\Shop\items\thum\CBBB004E552F8154E603A1EC5349848F.jpg" />
+    <Content Include="assets\images\web\yongjiu01.jpg" />
+    <Content Include="assets\images\web\yongjiu02.jpg" />
+    <Content Include="assets\images\web\yongjiu03.jpg" />
+    <Content Include="assets\images\web\yongjiu04.jpg" />
+    <Content Include="assets\images\web\yongjiu05.jpg" />
+    <Content Include="assets\images\web\yongjiu06.jpg" />
+    <Content Include="assets\images\web\yongjiu07.jpg" />
+    <Content Include="assets\images\web\yongjiu101.jpg" />
+    <Content Include="assets\images\web\yongjiu102.jpg" />
+    <Content Include="assets\images\web\yongjiu103.jpg" />
+    <Content Include="assets\images\web\yongjiu104.jpg" />
+    <Content Include="assets\images\web\yongjiu105.jpg" />
+    <Content Include="assets\images\web\yongjiu106.jpg" />
+    <Content Include="assets\images\web\yongjiu107.jpg" />
+    <Content Include="assets\images\wxpro_login1.jpg" />
+    <Content Include="assets\js\banner.js" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\fastclick.js" />
+    <Content Include="assets\js\hvtimg.min.js" />
+    <Content Include="assets\js\jquery-1.11.2.min.js" />
+    <Content Include="assets\js\jquery.hovertree.0.1.3.js" />
+    <Content Include="assets\js\mana-sidebar-index.js" />
+    <Content Include="assets\js\scripts.js" />
+    <Content Include="assets\js\summernote-yongjiu.js" />
+    <Content Include="assets\js\supersized-init.js" />
+    <Content Include="assets\js\supersized.3.2.7.min.js" />
+    <Content Include="assets\js\touchslider.dev.js" />
+    <Content Include="assets\js\zepto.min.js" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\lib\font-awesome\css\font-awesome.css" />
+    <Content Include="assets\lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="assets\lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\lib\jquery-2.1.4\jquery-2.1.4.js" />
+    <Content Include="assets\lib\jquery-2.1.4\jquery-2.1.4.min.js" />
+    <Content Include="assets\lib\jquery-mobile-1.4.5\jquery.mobile-1.4.5.css" />
+    <Content Include="assets\lib\jquery-mobile-1.4.5\jquery.mobile-1.4.5.js" />
+    <Content Include="assets\lib\jquery-mobile-1.4.5\jquery.mobile-1.4.5.min.css" />
+    <Content Include="assets\lib\jquery-mobile-1.4.5\jquery.mobile-1.4.5.min.js" />
+    <Content Include="assets\lib\raty\css\jquery.raty.css" />
+    <Content Include="assets\lib\raty\fonts\raty.svg" />
+    <Content Include="assets\lib\raty\images\cancel-off.png" />
+    <Content Include="assets\lib\raty\images\cancel-on.png" />
+    <Content Include="assets\lib\raty\images\star-half.png" />
+    <Content Include="assets\lib\raty\images\star-off.png" />
+    <Content Include="assets\lib\raty\images\star-on.png" />
+    <Content Include="assets\lib\raty\js\jquery.raty.js" />
+    <Content Include="assets\lib\slick\ajax-loader.gif" />
+    <Content Include="assets\lib\slick\fonts\slick.svg" />
+    <Content Include="assets\lib\slick\slick-theme.css" />
+    <Content Include="assets\lib\slick\slick.css" />
+    <Content Include="assets\lib\slick\slick.js" />
+    <Content Include="assets\lib\slick\slick.min.js" />
+    <Content Include="assets\lib\Smoothslides\css\smoothslides.theme.css" />
+    <Content Include="assets\lib\Smoothslides\css\stylesheet.css" />
+    <Content Include="assets\lib\Smoothslides\js\jquery.js" />
+    <Content Include="assets\lib\Smoothslides\js\smoothslides-2.0.0.js" />
+    <Content Include="assets\lib\Smoothslides\js\smoothslides-2.0.0.min.js" />
+    <Content Include="assets\lib\Smoothslides\js\smoothslides-2.1.0.js" />
+    <Content Include="assets\lib\Smoothslides\js\smoothslides-2.1.0.min.js" />
+    <Content Include="assets\lib\summernote\css\summernote-bs2.css" />
+    <Content Include="assets\lib\summernote\css\summernote-bs3.css" />
+    <Content Include="assets\lib\summernote\css\summernote.css" />
+    <Content Include="assets\lib\summernote\js\summernote.js" />
+    <Content Include="assets\lib\summernote\js\summernote.min.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-ar-AR.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-ca-ES.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-cs-CZ.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-da-DK.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-de-DE.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-es-ES.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-es-EU.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-fa-IR.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-fi-FI.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-fr-FR.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-he-IL.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-hu-HU.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-id-ID.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-it-IT.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-ja-JP.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-ko-KR.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-nb-NO.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-nl-NL.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-pl-PL.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-pt-BR.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-ro-RO.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-ru-RU.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-sk-SK.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-sl-SI.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-sr-RS-Latin.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-sr-RS.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-sv-SE.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-th-TH.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-tr-TR.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-uk-UA.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-vi-VN.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-zh-CN.js" />
+    <Content Include="assets\lib\summernote\lang\summernote-zh-TW.js" />
+    <Content Include="assets\lib\summernote\plugin\summernote-ext-hello.js" />
+    <Content Include="assets\lib\summernote\plugin\summernote-ext-video.js" />
+    <Content Include="assets\lib\swfupload\css\default.css" />
+    <Content Include="assets\lib\swfupload\images\cancelbutton.gif" />
+    <Content Include="assets\lib\swfupload\images\error.gif" />
+    <Content Include="assets\lib\swfupload\images\header-bg.jpg" />
+    <Content Include="assets\lib\swfupload\images\logo.gif" />
+    <Content Include="assets\lib\swfupload\images\page_white_add.png" />
+    <Content Include="assets\lib\swfupload\images\toobig.gif" />
+    <Content Include="assets\lib\swfupload\images\uploadlimit.gif" />
+    <Content Include="assets\lib\swfupload\images\XPButtonNoText_160x22.png" />
+    <Content Include="assets\lib\swfupload\images\zerobyte.gif" />
+    <Content Include="assets\lib\swfupload\js\handlers.js" />
+    <Content Include="assets\lib\swfupload\swfupload\swfupload.cookies.js" />
+    <Content Include="assets\lib\swfupload\swfupload\swfupload.js" />
+    <Content Include="assets\lib\swfupload\swfupload\swfupload.proxy.js" />
+    <Content Include="assets\lib\swfupload\swfupload\swfupload.queue.js" />
+    <Content Include="assets\lib\swfupload\swfupload\swfupload.speed.js" />
+    <Content Include="assets\lib\swfupload\swfupload\swfupload.swf" />
+    <Content Include="assets\lib\swfupload\swfupload\swfupload_fp9.swf" />
+    <Content Include="assets\lib\Swiper-3.1.7\css\swiper.css" />
+    <Content Include="assets\lib\Swiper-3.1.7\css\swiper.min.css" />
+    <Content Include="assets\lib\Swiper-3.1.7\js\swiper.jquery.js" />
+    <Content Include="assets\lib\Swiper-3.1.7\js\swiper.jquery.min.js" />
+    <Content Include="assets\lib\Swiper-3.1.7\js\swiper.jquery.umd.js" />
+    <Content Include="assets\lib\Swiper-3.1.7\js\swiper.jquery.umd.min.js" />
+    <Content Include="assets\lib\Swiper-3.1.7\js\swiper.js" />
+    <Content Include="assets\lib\Swiper-3.1.7\js\swiper.min.js" />
+    <Content Include="default.aspx" />
+    <Content Include="default.htm" />
+    <Content Include="GuestBook\AddMessage.aspx" />
+    <Content Include="GuestBook\Default.aspx" />
+    <Content Include="GuestBook\default.htm" />
+    <Content Include="HvtArt\ArtDetail.aspx" />
+    <Content Include="HvtArt\HvtList.aspx" />
+    <Content Include="HvtImg\Default.aspx" />
+    <Content Include="HVTPanel\HArticle\AddArticle.aspx" />
+    <Content Include="HVTPanel\HArticle\AlterArticle.aspx" />
+    <Content Include="HVTPanel\HArticle\ArticleList.aspx" />
+    <Content Include="HVTPanel\HPicture\AddFolder.aspx" />
+    <Content Include="HVTPanel\HPicture\AddPicture.aspx" />
+    <Content Include="HVTPanel\HPicture\PictureAlter.aspx" />
+    <Content Include="HVTPanel\HPicture\PictureList.aspx" />
+    <Content Include="HVTPanel\Index.aspx" />
+    <Content Include="HVTPanel\Login.aspx" />
+    <Content Include="HVTPanel\UserMessage\HandleMessage.aspx" />
+    <Content Include="HVTPanel\UserMessage\MessageList.aspx" />
+    <Content Include="images\web\03.jpg" />
+    <Content Include="images\web\1.jpg" />
+    <Content Include="images\123.jpg" />
+    <Content Include="images\web\12.gif" />
+    <Content Include="images\web\2.jpg" />
+    <Content Include="images\web\21.gif" />
+    <Content Include="images\web\3.jpg" />
+    <Content Include="images\web\30.gif" />
+    <Content Include="images\web\4.jpg" />
+    <Content Include="images\41.jpg" />
+    <Content Include="images\web\6.gif" />
+    <Content Include="images\web\air01.jpg" />
+    <Content Include="images\web\air02.jpg" />
+    <Content Include="images\web\air03.jpg" />
+    <Content Include="images\web\air04.jpg" />
+    <Content Include="images\web\air101.jpg" />
+    <Content Include="images\web\air102.jpg" />
+    <Content Include="images\web\air103.jpg" />
+    <Content Include="images\web\air104.jpg" />
+    <Content Include="images\web\airIntro01.jpg" />
+    <Content Include="images\web\airIntro02.jpg" />
+    <Content Include="images\web\airIntro03.jpg" />
+    <Content Include="images\web\airIntro04.jpg" />
+    <Content Include="images\web\airIntro05.jpg" />
+    <Content Include="images\web\airIntro06.jpg" />
+    <Content Include="images\web\airIntro07.jpg" />
+    <Content Include="images\web\airIntro08.jpg" />
+    <Content Include="images\web\cart01.jpg" />
+    <Content Include="images\web\claimsProcess\thumb\1.jpg" />
+    <Content Include="images\web\claimsProcess\thumb\2.jpg" />
+    <Content Include="images\web\claimsProcess\thumb\3.jpg" />
+    <Content Include="images\web\claimsProcess\thumb\4.jpg" />
+    <Content Include="images\web\claimsProcess\thumb\5.jpg" />
+    <Content Include="images\web\claimsProcess\thumb\6.jpg" />
+    <Content Include="images\web\claimsProcess\thumb\7.jpg" />
+    <Content Include="images\web\claimsProcess\thumb\8.jpg" />
+    <Content Include="images\web\claimsProcess\thumb\9.jpg" />
+    <Content Include="images\web\dark_embroidery.png" />
+    <Content Include="images\web\fast01.jpg" />
+    <Content Include="images\web\fast02.jpg" />
+    <Content Include="images\web\fast03.jpg" />
+    <Content Include="images\web\fast04.jpg" />
+    <Content Include="images\web\fast05.jpg" />
+    <Content Include="images\web\fast06.jpg" />
+    <Content Include="images\web\fast101.jpg" />
+    <Content Include="images\web\fast102.jpg" />
+    <Content Include="images\web\fast103.jpg" />
+    <Content Include="images\web\fast104.jpg" />
+    <Content Include="images\web\fast105.jpg" />
+    <Content Include="images\web\fast106.jpg" />
+    <Content Include="images\web\index01.jpg" />
+    <Content Include="images\web\index02.jpg" />
+    <Content Include="images\web\index03.jpg" />
+    <Content Include="images\web\index04.jpg" />
+    <Content Include="images\web\index05.jpg" />
+    <Content Include="images\web\leaveMSG.jpg" />
+    <Content Include="images\web\Manage\qrcode-50.jpg" />
+    <Content Include="images\web\Manage\qrcode-8.jpg" />
+    <Content Include="images\web\Manage\yongjiu-144x80.jpg" />
+    <Content Include="images\web\Manage\yongjiu-360x200.jpg" />
+    <Content Include="images\web\serverchenzhen.jpg" />
+    <Content Include="images\web\serverguoyinhua.jpg" />
+    <Content Include="images\web\serverjingyaru.jpg" />
+    <Content Include="images\web\serverligang.jpg" />
+    <Content Include="images\web\serverlijuan.jpg" />
+    <Content Include="images\web\serverliujun.jpg" />
+    <Content Include="images\web\serversuping.jpg" />
+    <Content Include="images\web\serverzhaoguolan.jpg" />
+    <Content Include="images\web\serverzhaolu.jpg" />
+    <Content Include="images\web\serviceManager01.jpg" />
+    <Content Include="images\web\shiyitu01.jpg" />
+    <Content Include="images\web\shiyitu02.jpg" />
+    <Content Include="images\web\shiyitu03.jpg" />
+    <Content Include="images\web\shiyitu04.jpg" />
+    <Content Include="images\web\shiyitu05.jpg" />
+    <Content Include="images\web\shiyitu06.jpg" />
+    <Content Include="images\web\shiyitu07.jpg" />
+    <Content Include="images\web\shiyitu08.jpg" />
+    <Content Include="images\web\Shop\items\BoLiShui01.jpg" />
+    <Content Include="images\web\Shop\items\thum\BoLiShui01.jpg" />
+    <Content Include="images\web\yongjiu01.jpg" />
+    <Content Include="images\web\yongjiu02.jpg" />
+    <Content Include="images\web\yongjiu03.jpg" />
+    <Content Include="images\web\yongjiu04.jpg" />
+    <Content Include="images\web\yongjiu05.jpg" />
+    <Content Include="images\web\yongjiu06.jpg" />
+    <Content Include="images\web\yongjiu07.jpg" />
+    <Content Include="images\web\yongjiu101.jpg" />
+    <Content Include="images\web\yongjiu102.jpg" />
+    <Content Include="images\web\yongjiu103.jpg" />
+    <Content Include="images\web\yongjiu104.jpg" />
+    <Content Include="images\web\yongjiu105.jpg" />
+    <Content Include="images\web\yongjiu106.jpg" />
+    <Content Include="images\web\yongjiu107.jpg" />
+    <Content Include="images\wxpro_login1.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="Manager\EnterpriseInfo\accountInfo.aspx" />
+    <Content Include="Manager\EnterpriseMarketing\addmenupage.aspx" />
+    <Content Include="Manager\EnterpriseMarketing\thumbnail.aspx" />
+    <Content Include="Manager\EnterpriseMarketing\upload.aspx" />
+    <Content Include="Manager\EnterpriseMarketing\wxmenumana.aspx" />
+    <Content Include="Manager\index.aspx" />
+    <Content Include="Manager\login.aspx" />
+    <Content Include="Manager\Template\test1.aspx" />
+    <Content Include="MessageList.htm" />
+    <Content Include="Public\js\jweixin-1.0.0.js" />
+    <Content Include="Public\js\require.min.js" />
+    <Content Include="Public\wap\css\base.css" />
+    <Content Include="Public\wap\css\common_1.css" />
+    <Content Include="Public\wap\images\cart_checked.png" />
+    <Content Include="Public\wap\images\close_blue.png" />
+    <Content Include="Public\wap\images\icon_shopcar.png" />
+    <Content Include="Public\wap\images\loading.gif" />
+    <Content Include="Public\wap\images\upload_img.png" />
+    <Content Include="Public\wap\js\SKFileUploadModule.js" />
+    <Content Include="Public\wap\scripts\lib\common.js" />
+    <Content Include="Public\wap\scripts\lib\jquery\jquery-1.11.0.min.js" />
+    <Content Include="Public\wap\scripts\lib\jquery\swipeSlide.min.js" />
+    <Content Include="Public\wap\scripts\lib\money.js" />
+    <Content Include="Public\wap\scripts\lib\vonder\jquery.js" />
+    <Content Include="Public\wap\scripts\lib\vonder\require.min.js" />
+    <Content Include="Public\wap\scripts\upload\common.js" />
+    <Content Include="Public\wap\scripts\upload\jquery.js" />
+    <Content Include="Public\wap\scripts\upload\require.min.js" />
+    <Content Include="Public\wap\scripts\upload\SKFileUpload.js" />
+    <Content Include="readtimes.xml" />
+    <Content Include="UILayer\AirConditioning.aspx" />
+    <Content Include="UILayer\AirConditioningPages\detectionProcess.aspx" />
+    <Content Include="UILayer\AirConditioningPages\introduction.aspx" />
+    <Content Include="UILayer\AirConditioningPages\refrigerant.aspx" />
+    <Content Include="UILayer\award-activity\answer\answer.aspx" />
+    <Content Include="UILayer\award-activity\answer\index.aspx" />
+    <Content Include="UILayer\FastClaims.aspx" />
+    <Content Include="UILayer\FastClaimsPages\autoinsurance.aspx" />
+    <Content Include="UILayer\FastClaimsPages\claimsappointment.aspx" />
+    <Content Include="UILayer\FastClaimsPages\claimsnotice.aspx" />
+    <Content Include="UILayer\FastClaimsPages\claimsprocess.aspx" />
+    <Content Include="UILayer\FastClaimsPages\divisionofresponsibilities.aspx" />
+    <Content Include="UILayer\FastClaimsPages\starservice.aspx" />
+    <Content Include="UILayer\FastClaimsPages\starservicePages\servercz_1.aspx" />
+    <Content Include="UILayer\FastClaimsPages\starservicePages\serverjyr_1.aspx" />
+    <Content Include="UILayer\FastClaimsPages\starservicePages\serverlijuan_1.aspx" />
+    <Content Include="UILayer\FastClaimsPages\starservicePages\serverlj_1.aspx" />
+    <Content Include="UILayer\FastClaimsPages\starservicePages\serverzgl_1.aspx" />
+    <Content Include="UILayer\FastClaimsPages\starservicePages\serverzl_1.aspx" />
+    <Content Include="UILayer\MetalPlate\appointment.aspx" />
+    <Content Include="UILayer\MetalPlate\index.aspx" />
+    <Content Include="UILayer\MetalPlate\orderList.aspx" />
+    <Content Include="UILayer\MetalPlate\orderresult.aspx" />
+    <Content Include="UILayer\MetalPlate\plateSelf.aspx" />
+    <Content Include="UILayer\MetalPlate\sebrand.aspx" />
+    <Content Include="UILayer\MetalPlate\semodel.aspx" />
+    <Content Include="UILayer\MetalPlate\WebForm1.aspx" />
+    <Content Include="UILayer\OnlineLeaveMessage.aspx" />
+    <Content Include="UILayer\shanxiyongjiu.aspx" />
+    <Content Include="UILayer\shanxiyongjiuPages\companyprofile.aspx" />
+    <Content Include="UILayer\shanxiyongjiuPages\consultant.aspx" />
+    <Content Include="UILayer\shanxiyongjiuPages\consultantPages\consultantguoyinhua_1.aspx" />
+    <Content Include="UILayer\shanxiyongjiuPages\consultantPages\consultantligang_1.aspx" />
+    <Content Include="UILayer\shanxiyongjiuPages\consultantPages\consultantsuping_1.aspx" />
+    <Content Include="UILayer\shanxiyongjiuPages\maintenanceAppointment.aspx" />
+    <Content Include="UILayer\shanxiyongjiuPages\roadsideAssistance.aspx" />
+    <Content Include="UILayer\shanxiyongjiuPages\serviceManager.aspx" />
+    <Content Include="UILayer\shanxiyongjiuPages\wifipage.aspx" />
+    <Content Include="UILayer\Shop\index.aspx" />
+    <Content Include="UILayer\Shop\mana\AddItem.aspx" />
+    <Content Include="UILayer\Shop\mana\DeleteItem.aspx" />
+    <Content Include="UILayer\Shop\mana\Detail.aspx" />
+    <Content Include="UILayer\Shop\mana\manager.aspx" />
+    <Content Include="UILayer\Shop\template\items.aspx" />
+    <Content Include="UILayer\Shop\template\success.aspx" />
+    <Content Include="UILayer\WeiXinManager.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="account\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="account\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="account\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="account\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\CarInfo\BrandService.cs" />
+    <Compile Include="BLL\CarInfo\CompanyService.cs" />
+    <Compile Include="BLL\CarInfo\DetailInfoService.cs" />
+    <Compile Include="BLL\CarInfo\ModelService.cs" />
+    <Compile Include="common\cls_ReceiveMsg.cs" />
+    <Compile Include="common\cls_SendMsg.cs" />
+    <Compile Include="common\MaterialManagement.cs" />
+    <Compile Include="common\Sqlhelper.cs" />
+    <Compile Include="common\Utility.cs" />
+    <Compile Include="DAL\CarInfo\BrandDAO.cs" />
+    <Compile Include="DAL\CarInfo\CompanyDAO.cs" />
+    <Compile Include="DAL\CarInfo\DetailInfoDAO.cs" />
+    <Compile Include="DAL\CarInfo\ModelDAO.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuestBook\AddMessage.aspx.cs">
+      <DependentUpon>AddMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuestBook\AddMessage.aspx.designer.cs">
+      <DependentUpon>AddMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuestBook\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuestBook\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\award-activity.ashx.cs">
+      <DependentUpon>award-activity.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\GetWxUnionID.ashx.cs">
+      <DependentUpon>GetWxUnionID.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\GetWxUsers.ashx.cs">
+      <DependentUpon>GetWxUsers.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\QRcode.ashx.cs">
+      <DependentUpon>QRcode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\vcode.ashx.cs">
+      <DependentUpon>vcode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\VerificationWxDeveloper.ashx.cs">
+      <DependentUpon>VerificationWxDeveloper.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="HvtArt\ArtDetail.aspx.cs">
+      <DependentUpon>ArtDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HvtArt\ArtDetail.aspx.designer.cs">
+      <DependentUpon>ArtDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HvtArt\HvtList.aspx.cs">
+      <DependentUpon>HvtList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HvtArt\HvtList.aspx.designer.cs">
+      <DependentUpon>HvtList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HvtImg\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HvtImg\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HVTPanel\HArticle\AddArticle.aspx.cs">
+      <DependentUpon>AddArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HVTPanel\HArticle\AddArticle.aspx.designer.cs">
+      <DependentUpon>AddArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HVTPanel\HArticle\AlterArticle.aspx.cs">
+      <DependentUpon>AlterArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HVTPanel\HArticle\AlterArticle.aspx.designer.cs">
+      <DependentUpon>AlterArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HVTPanel\HArticle\ArticleList.aspx.cs">
+      <DependentUpon>ArticleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HVTPanel\HArticle\ArticleList.aspx.designer.cs">
+      <DependentUpon>ArticleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HVTPanel\HPicture\AddFolder.aspx.cs">
+      <DependentUpon>AddFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HVTPanel\HPicture\AddFolder.aspx.designer.cs">
+      <DependentUpon>AddFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HVTPanel\HPicture\AddPicture.aspx.cs">
+      <DependentUpon>AddPicture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HVTPanel\HPicture\AddPicture.aspx.designer.cs">
+      <DependentUpon>AddPicture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HVTPanel\HPicture\PictureAlter.aspx.cs">
+      <DependentUpon>PictureAlter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HVTPanel\HPicture\PictureAlter.aspx.designer.cs">
+      <DependentUpon>PictureAlter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HVTPanel\HPicture\PictureList.aspx.cs">
+      <DependentUpon>PictureList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HVTPanel\HPicture\PictureList.aspx.designer.cs">
+      <DependentUpon>PictureList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HVTPanel\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HVTPanel\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HVTPanel\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HVTPanel\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HVTPanel\MPages\HvtMaster.Master.cs">
+      <DependentUpon>HvtMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HVTPanel\MPages\HvtMaster.Master.designer.cs">
+      <DependentUpon>HvtMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HVTPanel\UserMessage\HandleMessage.aspx.cs">
+      <DependentUpon>HandleMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HVTPanel\UserMessage\HandleMessage.aspx.designer.cs">
+      <DependentUpon>HandleMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HVTPanel\UserMessage\MessageList.aspx.cs">
+      <DependentUpon>MessageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HVTPanel\UserMessage\MessageList.aspx.designer.cs">
+      <DependentUpon>MessageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\EnterpriseInfo\accountInfo.aspx.cs">
+      <DependentUpon>accountInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\EnterpriseInfo\accountInfo.aspx.designer.cs">
+      <DependentUpon>accountInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\EnterpriseMarketing\addmenupage.aspx.cs">
+      <DependentUpon>addmenupage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\EnterpriseMarketing\addmenupage.aspx.designer.cs">
+      <DependentUpon>addmenupage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\EnterpriseMarketing\thumbnail.aspx.cs">
+      <DependentUpon>thumbnail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\EnterpriseMarketing\thumbnail.aspx.designer.cs">
+      <DependentUpon>thumbnail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\EnterpriseMarketing\upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\EnterpriseMarketing\upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\EnterpriseMarketing\wxmenumana.aspx.cs">
+      <DependentUpon>wxmenumana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\EnterpriseMarketing\wxmenumana.aspx.designer.cs">
+      <DependentUpon>wxmenumana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\master\mana.Master.cs">
+      <DependentUpon>mana.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\master\mana.Master.designer.cs">
+      <DependentUpon>mana.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Template\test1.aspx.cs">
+      <DependentUpon>test1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Template\test1.aspx.designer.cs">
+      <DependentUpon>test1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Access_Token.cs" />
+    <Compile Include="Model\CarInfoView.cs" />
+    <Compile Include="Model\CarInfo\Brand.cs" />
+    <Compile Include="Model\CarInfo\Company.cs" />
+    <Compile Include="Model\CarInfo\DetailInfo.cs" />
+    <Compile Include="Model\CarInfo\Model.cs" />
+    <Compile Include="Model\DBAccessToken.cs" />
+    <Compile Include="Model\DBMaterial.cs" />
+    <Compile Include="Model\Material.cs" />
+    <Compile Include="Model\QRcodeTicket.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteResource\HvtSite.Master.cs">
+      <DependentUpon>HvtSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteResource\HvtSite.Master.designer.cs">
+      <DependentUpon>HvtSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SqlHelpers\CarInfo.cs" />
+    <Compile Include="UILayer\AirConditioning.aspx.cs">
+      <DependentUpon>AirConditioning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\AirConditioning.aspx.designer.cs">
+      <DependentUpon>AirConditioning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="common\CustomMenu.cs" />
+    <Compile Include="UILayer\AirConditioningPages\detectionProcess.aspx.cs">
+      <DependentUpon>detectionProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\AirConditioningPages\detectionProcess.aspx.designer.cs">
+      <DependentUpon>detectionProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\AirConditioningPages\introduction.aspx.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\AirConditioningPages\introduction.aspx.designer.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\AirConditioningPages\refrigerant.aspx.cs">
+      <DependentUpon>refrigerant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\AirConditioningPages\refrigerant.aspx.designer.cs">
+      <DependentUpon>refrigerant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\award-activity\answer\answer.aspx.cs">
+      <DependentUpon>answer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\award-activity\answer\answer.aspx.designer.cs">
+      <DependentUpon>answer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\award-activity\answer\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\award-activity\answer\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FastClaims.aspx.cs">
+      <DependentUpon>FastClaims.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\FastClaims.aspx.designer.cs">
+      <DependentUpon>FastClaims.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\autoinsurance.aspx.cs">
+      <DependentUpon>autoinsurance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\autoinsurance.aspx.designer.cs">
+      <DependentUpon>autoinsurance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\claimsappointment.aspx.cs">
+      <DependentUpon>claimsappointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\claimsappointment.aspx.designer.cs">
+      <DependentUpon>claimsappointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\claimsnotice.aspx.cs">
+      <DependentUpon>claimsnotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\claimsnotice.aspx.designer.cs">
+      <DependentUpon>claimsnotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\claimsprocess.aspx.cs">
+      <DependentUpon>claimsprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\claimsprocess.aspx.designer.cs">
+      <DependentUpon>claimsprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\divisionofresponsibilities.aspx.cs">
+      <DependentUpon>divisionofresponsibilities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\divisionofresponsibilities.aspx.designer.cs">
+      <DependentUpon>divisionofresponsibilities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\starservice.aspx.cs">
+      <DependentUpon>starservice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\starservice.aspx.designer.cs">
+      <DependentUpon>starservice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\starservicePages\servercz_1.aspx.cs">
+      <DependentUpon>servercz_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\starservicePages\servercz_1.aspx.designer.cs">
+      <DependentUpon>servercz_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\starservicePages\serverjyr_1.aspx.cs">
+      <DependentUpon>serverjyr_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\starservicePages\serverjyr_1.aspx.designer.cs">
+      <DependentUpon>serverjyr_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\starservicePages\serverlijuan_1.aspx.cs">
+      <DependentUpon>serverlijuan_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\starservicePages\serverlijuan_1.aspx.designer.cs">
+      <DependentUpon>serverlijuan_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\starservicePages\serverlj_1.aspx.cs">
+      <DependentUpon>serverlj_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\starservicePages\serverlj_1.aspx.designer.cs">
+      <DependentUpon>serverlj_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\starservicePages\serverzgl_1.aspx.cs">
+      <DependentUpon>serverzgl_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\starservicePages\serverzgl_1.aspx.designer.cs">
+      <DependentUpon>serverzgl_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\starservicePages\serverzl_1.aspx.cs">
+      <DependentUpon>serverzl_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\FastClaimsPages\starservicePages\serverzl_1.aspx.designer.cs">
+      <DependentUpon>serverzl_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\appointment.aspx.cs">
+      <DependentUpon>appointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\appointment.aspx.designer.cs">
+      <DependentUpon>appointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\orderList.aspx.cs">
+      <DependentUpon>orderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\orderList.aspx.designer.cs">
+      <DependentUpon>orderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\orderresult.aspx.cs">
+      <DependentUpon>orderresult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\orderresult.aspx.designer.cs">
+      <DependentUpon>orderresult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\plateSelf.aspx.cs">
+      <DependentUpon>plateSelf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\plateSelf.aspx.designer.cs">
+      <DependentUpon>plateSelf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\sebrand.aspx.cs">
+      <DependentUpon>sebrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\sebrand.aspx.designer.cs">
+      <DependentUpon>sebrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\semodel.aspx.cs">
+      <DependentUpon>semodel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\semodel.aspx.designer.cs">
+      <DependentUpon>semodel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\upload.ashx.cs">
+      <DependentUpon>upload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\MetalPlate\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\OnlineLeaveMessage.aspx.cs">
+      <DependentUpon>OnlineLeaveMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\OnlineLeaveMessage.aspx.designer.cs">
+      <DependentUpon>OnlineLeaveMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiu.aspx.cs">
+      <DependentUpon>shanxiyongjiu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiu.aspx.designer.cs">
+      <DependentUpon>shanxiyongjiu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\companyprofile.aspx.cs">
+      <DependentUpon>companyprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\companyprofile.aspx.designer.cs">
+      <DependentUpon>companyprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\consultant.aspx.cs">
+      <DependentUpon>consultant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\consultant.aspx.designer.cs">
+      <DependentUpon>consultant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\consultantPages\consultantguoyinhua_1.aspx.cs">
+      <DependentUpon>consultantguoyinhua_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\consultantPages\consultantguoyinhua_1.aspx.designer.cs">
+      <DependentUpon>consultantguoyinhua_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\consultantPages\consultantligang_1.aspx.cs">
+      <DependentUpon>consultantligang_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\consultantPages\consultantligang_1.aspx.designer.cs">
+      <DependentUpon>consultantligang_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\consultantPages\consultantsuping_1.aspx.cs">
+      <DependentUpon>consultantsuping_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\consultantPages\consultantsuping_1.aspx.designer.cs">
+      <DependentUpon>consultantsuping_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\maintenanceAppointment.aspx.cs">
+      <DependentUpon>maintenanceAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\maintenanceAppointment.aspx.designer.cs">
+      <DependentUpon>maintenanceAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\roadsideAssistance.aspx.cs">
+      <DependentUpon>roadsideAssistance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\roadsideAssistance.aspx.designer.cs">
+      <DependentUpon>roadsideAssistance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\serviceManager.aspx.cs">
+      <DependentUpon>serviceManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\serviceManager.aspx.designer.cs">
+      <DependentUpon>serviceManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\wifipage.aspx.cs">
+      <DependentUpon>wifipage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\shanxiyongjiuPages\wifipage.aspx.designer.cs">
+      <DependentUpon>wifipage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Shop\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\Shop\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Shop\mana\AddItem.aspx.cs">
+      <DependentUpon>AddItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\Shop\mana\AddItem.aspx.designer.cs">
+      <DependentUpon>AddItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Shop\mana\DeleteItem.aspx.cs">
+      <DependentUpon>DeleteItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\Shop\mana\DeleteItem.aspx.designer.cs">
+      <DependentUpon>DeleteItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Shop\mana\Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\Shop\mana\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Shop\mana\manager.aspx.cs">
+      <DependentUpon>manager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\Shop\mana\manager.aspx.designer.cs">
+      <DependentUpon>manager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Shop\template\items.aspx.cs">
+      <DependentUpon>items.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\Shop\template\items.aspx.designer.cs">
+      <DependentUpon>items.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Shop\template\success.aspx.cs">
+      <DependentUpon>success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\Shop\template\success.aspx.designer.cs">
+      <DependentUpon>success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\WeiXinManager.aspx.cs">
+      <DependentUpon>WeiXinManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UILayer\WeiXinManager.aspx.designer.cs">
+      <DependentUpon>WeiXinManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\SprayOrderView.cs" />
+    <Compile Include="ViewModel\WxUserInfoView.cs" />
+    <Compile Include="Web\Evaluation\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Evaluation\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wxhandler.ashx.cs">
+      <DependentUpon>wxhandler.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="handlers\VerificationWxDeveloper.ashx" />
+    <Content Include="handlers\QRcode.ashx" />
+    <Content Include="assets\css\bootstrap.css.map" />
+    <Content Include="assets\css\bootstrap-theme.css.map" />
+    <Content Include="HVTPanel\MPages\HvtMaster.Master" />
+    <Content Include="handlers\vcode.ashx" />
+    <Content Include="handlers\GetWxUsers.ashx" />
+    <Content Include="handlers\GetWxUnionID.ashx" />
+    <Content Include="Manager\master\mana.Master" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\lib\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\lib\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="assets\lib\font-awesome\less\animated.less" />
+    <Content Include="assets\lib\font-awesome\less\bordered-pulled.less" />
+    <Content Include="assets\lib\font-awesome\less\core.less" />
+    <Content Include="assets\lib\font-awesome\less\fixed-width.less" />
+    <Content Include="assets\lib\font-awesome\less\font-awesome.less" />
+    <Content Include="assets\lib\font-awesome\less\icons.less" />
+    <Content Include="assets\lib\font-awesome\less\larger.less" />
+    <Content Include="assets\lib\font-awesome\less\list.less" />
+    <Content Include="assets\lib\font-awesome\less\mixins.less" />
+    <Content Include="assets\lib\font-awesome\less\path.less" />
+    <Content Include="assets\lib\font-awesome\less\rotated-flipped.less" />
+    <Content Include="assets\lib\font-awesome\less\stacked.less" />
+    <Content Include="assets\lib\font-awesome\less\variables.less" />
+    <Content Include="assets\lib\font-awesome\scss\font-awesome.scss" />
+    <Content Include="assets\lib\font-awesome\scss\_animated.scss" />
+    <Content Include="assets\lib\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="assets\lib\font-awesome\scss\_core.scss" />
+    <Content Include="assets\lib\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="assets\lib\font-awesome\scss\_icons.scss" />
+    <Content Include="assets\lib\font-awesome\scss\_larger.scss" />
+    <Content Include="assets\lib\font-awesome\scss\_list.scss" />
+    <Content Include="assets\lib\font-awesome\scss\_mixins.scss" />
+    <Content Include="assets\lib\font-awesome\scss\_path.scss" />
+    <Content Include="assets\lib\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="assets\lib\font-awesome\scss\_stacked.scss" />
+    <Content Include="assets\lib\font-awesome\scss\_variables.scss" />
+    <Content Include="assets\lib\raty\fonts\raty.eot" />
+    <Content Include="assets\lib\raty\fonts\raty.ttf" />
+    <Content Include="assets\lib\raty\fonts\raty.woff" />
+    <Content Include="handlers\award-activity.ashx" />
+    <Content Include="assets\lib\jquery-mobile-1.4.5\jquery.mobile-1.4.5.min.map" />
+    <Content Include="assets\lib\jquery-2.1.4\jquery-2.1.4.min.map" />
+    <Content Include="assets\lib\Swiper-3.1.7\js\maps\swiper.jquery.min.js.map" />
+    <Content Include="assets\lib\Swiper-3.1.7\js\maps\swiper.jquery.umd.min.js.map" />
+    <Content Include="assets\lib\Swiper-3.1.7\js\maps\swiper.min.js.map" />
+    <Content Include="assets\images\web\Shop\items\temp" />
+    <Content Include="assets\lib\slick\config.rb" />
+    <Content Include="assets\lib\slick\fonts\slick.eot" />
+    <Content Include="assets\lib\slick\fonts\slick.ttf" />
+    <Content Include="assets\lib\slick\fonts\slick.woff" />
+    <Content Include="assets\lib\slick\slick-theme.less" />
+    <Content Include="assets\lib\slick\slick-theme.scss" />
+    <Content Include="assets\lib\slick\slick.less" />
+    <Content Include="assets\lib\slick\slick.scss" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\wxtest.pubxml" />
+    <None Include="Properties\PublishProfiles\wxtest1.pubxml" />
+    <Content Include="SiteResource\HvtSite.Master" />
+    <None Include="Properties\PublishProfiles\wx_v1.pubxml" />
+    <Content Include="UILayer\MetalPlate\upload.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web\Evaluation\index.aspx" />
+    <Content Include="wxhandler.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HoverTree.BLL\HoverTree.BLL.csproj">
+      <Project>{c41b7718-29a2-4a25-a2a9-429a9d1f7210}</Project>
+      <Name>HoverTree.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HoverTree.DBTools\HoverTree.DBTools.csproj">
+      <Project>{48b13ca9-6fe9-4342-b3c7-eaafc302e098}</Project>
+      <Name>HoverTree.DBTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HoverTree.Framework\HoverTree.Framework.csproj">
+      <Project>{14f134db-7c85-463e-8cc2-ed13ee0eaa59}</Project>
+      <Name>HoverTree.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HoverTree.Model\HoverTree.Model.csproj">
+      <Project>{e189adec-1343-4393-8010-ca3d112d9aa4}</Project>
+      <Name>HoverTree.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HoverTree.SQLServerDAL\HoverTree.SQLServerDAL.csproj">
+      <Project>{a0144a82-ca63-4330-bbcb-03fd419184c5}</Project>
+      <Name>HoverTree.SQLServerDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WxDev.BLL\WxDev.BLL.csproj">
+      <Project>{d190b207-79ad-4439-8bc7-0310f65a5431}</Project>
+      <Name>WxDev.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WxDev.Model\WxDev.Model.csproj">
+      <Project>{067280fc-104b-4062-b441-8f506cc13b0b}</Project>
+      <Name>WxDev.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WxDev.Utility\WxDev.Utility.csproj">
+      <Project>{bf4d7adf-744a-4529-af54-e77a38680436}</Project>
+      <Name>WxDev.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\lib\jquery-mobile-1.4.5\images\" />
+    <Folder Include="images\thumbnail\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16227</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:16227/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
