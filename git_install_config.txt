@@ -1,0 +1,7 @@
+1. set user and email
+	git config --global user.name "Name"
+	git config --global user.email "Email"
+2. create folder and initail
+	mkdir abc
+	git init
+
